@@ -1,0 +1,100 @@
+input.form-control[type=text] {
+  display: block !important;
+  width: 100% !important;
+  height: calc(1.5em + .75rem + 2px) !important;
+  padding: .375rem .75rem !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #495057 !important;
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  border: 1px solid #ced4da !important;
+  border-radius: .25rem !important;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+  margin: 0 !important;
+  text-align: left !important;
+  text-decoration: none;
+}
+
+input.form-control-display[type=text] {
+  display: block;
+  width: 100% !important;
+  height: calc(1.5em + .75rem + 2px) !important;
+  padding: .375rem .75rem !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #495057 !important;
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  border: 1px solid #ced4da !important;
+  border-radius: .25rem !important;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+  margin: 0 !important;
+  text-align: left !important;
+  text-decoration: none;
+}
+
+input.form-control-orc[type=text] {
+  display: inline-block;
+  width: 50%;
+  height: calc(1.5em + .75rem + 2px) !important;
+  padding: .375rem .75rem !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #495057 !important;
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  border: 1px solid #ced4da !important;
+  border-radius: .25rem !important;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+  margin: 0 !important;
+  text-align: left !important;
+  text-decoration: none;
+}
+
+.form-pesquisa {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.icon-pesquisa {
+  width: auto;
+  padding: 15px;
+}
+
+.icon-pesquisa a {
+  float: left;
+  cursor: pointer;
+  text-decoration: underline !important;
+  color: #444 !important;
+}
+
+.icon-pesquisa svg {
+  display: inline-block !important;
+}
+
+.ReactTable {
+  width: 100%;
+}
+
+.ReactTable.-striped .rt-tr.-odd {
+  background-color: #babac17d !important;
+}
+
+.loadBox {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

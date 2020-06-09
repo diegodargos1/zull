@@ -1,0 +1,109 @@
+ SubComponent={row => {
+                console.log(row)
+                return (
+                  <div style={{ padding: "20px" }}>
+                    {row.original.contatosValido ? 
+                        <Collapsible trigger="Contatos" className="contato-expand" openedClassName="contato-expand">
+                            {row.original.contatos.map((contato, i) => {
+                                const item = (
+                                    <div className="consulta-detalhe" key={"contato"+i}>
+                                        {(contato.AreaContato) ? <p><b>Tipo Contato:</b> {contato.AreaContato}</p> : ""}
+                                       {(contato.ContatoEmpresa) ?  <p><b>Empresa:</b> {contato.ContatoEmpresa}</p> : ""}
+                                        {(contato.ContatoNome) ? <p><b>Nome:</b> {contato.ContatoNome}</p> : ""}
+                                        {(contato.ContatoEmail) ? <p><b>Email:</b> {contato.ContatoEmail}</p> : ""}
+                                        {(contato.ContatoTelefone) ? <p><b>Telefone:</b> {contato.ContatoTelefone}</p> : ""}
+                                        {(contato.ContatoCelular) ? <p><b>Celular:</b> {contato.ContatoCelular}</p> : ""}
+                                        {(contato.ContatoParentesco) ? <p><b>Parentesco:</b> {contato.ContatoParentesco}</p> : ""}
+                                        {(contato.ContatoObs) ? <p><b>Obs:</b> {contato.ContatoObs}</p> : ""}
+                                        <hr></hr>
+                                    </div>
+                                )
+
+                                return item;
+                            }
+                            )}
+                        </Collapsible> : ""
+                    }
+                    {row.original.enderecoValido ? 
+                        <Collapsible trigger="Enderecos"  className="contato-expand" openedClassName="contato-expand" >
+                           {row.original.endereco.map((data, i) => {
+                                const item = (
+                                    <div className="consulta-detalhe" key={"endereco"+i}>
+                                        {(data.Rua) ? <p><b>Rua:</b> {data.Rua}</p> : ""}
+                                        {(data.Numero) ? <p><b>Numero:</b> {data.Numero}</p> : ""}
+                                        {(data.Complemento) ?  <p><b>Complemento:</b> {data.Complemento}</p> : ""}
+                                        {(data.Bairro) ? <p><b>Bairro:</b> {data.Bairro}</p> : ""}
+                                        {(data.Cidade) ? <p><b>Cidade:</b> {data.Cidade}</p> : ""}
+                                        {(data.Estado) ? <p><b>Estado:</b> {data.Estado}</p> : ""}
+                                        {(data.Pais) ? <p><b>Pais:</b> {data.Pais}</p> : ""}
+                                        {(data.Cep) ? <p><b>Cep:</b> {data.Cep}</p> : ""}
+                                        <hr></hr>
+                                    </div>
+                                )
+
+                                return item;
+                            }
+                            )}
+                        </Collapsible> : ""
+                    }
+                    {row.original.financeiroValido ? 
+                        <Collapsible trigger="Financeiro"  className="contato-expand" openedClassName="contato-expand" >
+                           {row.original.financeiro.map((data, i) => {
+                                const item = (
+                                    <div className="consulta-detalhe" key={"financeiro"+i}>
+                                        {(data.FinanceiroBanco) ? <p><b>Banco :</b> {data.FinanceiroBanco}</p> : ""}
+                                        {(data.TipoConta) ? <p><b>Tipo Conta:</b> {data.TipoConta}</p> : ""}
+                                        {(data.Agencia) ?  <p><b>Agencia:</b> {data.Agencia}</p> : ""}
+                                        {(data.Conta) ? <p><b>Conta:</b> {data.Conta}</p> : ""}
+                                        {(data.CnpjFavorecido) ? <p><b>Cnpj/CPF Favorecido:</b> {data.CnpjFavorecido}</p> : ""}
+                                        {(data.NomeFavorecido) ? <p><b>Nome Favorecido:</b> {data.NomeFavorecido}</p> : ""}
+                                        {(data.RegraFaturamento) ? <p><b>Regra Faturamento:</b> {data.RegraFaturamento}</p> : ""}
+                                        <hr></hr>
+                                    </div>
+                                )
+
+                                return item;
+                            }
+                            )}
+                        </Collapsible> : ""
+                    }
+                    {row.original.documentoValido ? 
+                        <Collapsible trigger="Documentos"  className="contato-expand" openedClassName="contato-expand" >
+                            <p>This is the collapsible content. It can be any element or React component you like.</p>
+                            <p>It can even be another Collapsible component. Check out the next section!</p>
+                        </Collapsible> : ""
+                    }
+                    {row.original.escolaridadeValido ? 
+                        <Collapsible trigger="Escolaridade/Profissao"  className="contato-expand" openedClassName="contato-expand" >
+                            <p>This is the collapsible content. It can be any element or React component you like.</p>
+                            <p>It can even be another Collapsible component. Check out the next section!</p>
+                        </Collapsible> : ""
+                    }
+                    {row.original.saudeValido ? 
+                        <Collapsible trigger="Saude"  className="contato-expand" openedClassName="contato-expand" >
+                            <p>This is the collapsible content. It can be any element or React component you like.</p>
+                            <p>It can even be another Collapsible component. Check out the next section!</p>
+                        </Collapsible> : ""
+                    }
+                    {row.original.habitoValido ? 
+                        <Collapsible trigger="Habitos"  className="contato-expand" openedClassName="contato-expand" >
+                            <p>This is the collapsible content. It can be any element or React component you like.</p>
+                            <p>It can even be another Collapsible component. Check out the next section!</p>
+                        </Collapsible> : ""
+                    }
+                    {row.original.redeValido ? 
+                        <Collapsible trigger="Rede Social"  className="contato-expand" openedClassName="contato-expand" >
+                            <p>This is the collapsible content. It can be any element or React component you like.</p>
+                            <p>It can even be another Collapsible component. Check out the next section!</p>
+                        </Collapsible> : ""
+                    }
+                    {row.original.viagemValido ? 
+                        <Collapsible trigger="Experiencia de Viagens"  className="contato-expand" openedClassName="contato-expand" >
+                            <p>This is the collapsible content. It can be any element or React component you like.</p>
+                            <p>It can even be another Collapsible component. Check out the next section!</p>
+                        </Collapsible> : ""
+                    }
+                
+                  </div>
+                );
+              }}

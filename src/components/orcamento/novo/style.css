@@ -1,0 +1,63 @@
+.react-autosuggest__suggestion {
+  cursor: pointer;
+}
+
+.react-autosuggest__suggestions-list {
+  list-style-type: none;
+  background-color: #adacbb44;
+}
+
+.form-control-viagem {
+  display: inline-block !important;
+  width: 100% !important;
+  height: calc(1.5em + 0.75rem + 2px) !important;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #495057 !important;
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  border: 1px solid #ced4da !important;
+  border-radius: 0.25rem !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+  margin: 0 1px !important;
+  text-align: left !important;
+  text-decoration: none;
+}
+
+.width5 {
+  width: 100% !important;
+}
+
+.width10 {
+  width: 100% !important;
+}
+
+.width20 {
+  width: 100% !important;
+}
+
+.desktop {
+  display: block;
+}
+.phone {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .desktop {
+    display: block;
+  }
+  .phone {
+    display: none;
+  }
+  .width5 {
+    width: 65px !important;
+  }
+  .width10 {
+    width: 130px !important;
+  }
+  .width20 {
+    width: 269px !important;
+  }
+}

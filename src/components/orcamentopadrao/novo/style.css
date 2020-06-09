@@ -1,0 +1,8 @@
+.react-autosuggest__suggestion {
+    cursor: pointer;
+}
+
+.react-autosuggest__suggestions-list {
+    list-style-type: none;
+    background-color: #adacbb44;
+}

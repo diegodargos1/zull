@@ -1,0 +1,95 @@
+.detalhes {
+  width: 100%;
+}
+
+.consulta-detalhe p,
+.detalhes p {
+  margin-bottom: 10px !important;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.consulta-detalhe {
+  padding: 15px 0 !important;
+}
+
+.consulta-detalhe:not(:first-of-type) {
+  border-top: 1px solid #1039b3;
+}
+
+.contato-expand {
+  border-bottom: 2px solid #1039b3;
+  display: inline-block;
+  cursor: pointer;
+  color: #000;
+  padding: 11px 0px;
+  text-align: left;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.contato-expand-span button {
+  margin-bottom: 15px !important;
+}
+
+.contato-expand-opened {
+  background: rgb(221, 221, 221);
+  background-color: #dbdcdf;
+  display: inline-block;
+  cursor: pointer;
+  color: #000;
+  padding: 11px 0px;
+  text-align: left;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.contato-expand:hover {
+  background: rgb(221, 221, 221);
+  background-color: #dbdcdf;
+}
+
+
+.contato-expand:active {
+  position: relative;
+  top: 1px;
+}
+
+.contato-expand-span {
+  border-bottom: 2px solid #1039b3;
+  display: inline-block;
+  color: #000;
+  text-align: left;
+  width: 100%;
+}
+
+
+.Collapsible__contentOuter {
+  background-color: white;
+  color: black;
+}
+
+.consulta-voltar {
+  width: 100%;
+  padding: 15px;
+}
+
+.consulta-voltar a {
+  float: left;
+  cursor: pointer;
+  text-decoration: underline !important;
+  color: #444 !important;
+}
+
+.consulta-voltar a:not(:first-of-type) {
+  float: right;
+}
+
+.rt-tr-group:hover {
+  background-color: rgb(184, 184, 184);
+  cursor: pointer;
+}
+
+.tipofornecedor {
+  /* display: none */
+}
